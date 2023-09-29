@@ -1,0 +1,178 @@
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+  background-color: orange;
+    font-size: 14px;
+}
+
+.container{
+    background-color: #FFFFFF;
+    margin: 100px auto;
+    height: 50%;
+    width: 60%;
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -90%);
+    box-shadow: 3px 3px 3px  rgb(103, 103, 103);
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* round-text */
+.round{
+    text-align: center;
+    padding: 30px 0 0 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.round p{
+    margin: 0;
+}
+
+span{
+    padding-left: 5px;
+}
+
+/* player */
+.player-box{
+    padding: 30px 50px ;
+    display: flex;
+    gap: 200px;
+    border-radius: 8px;
+    
+}
+
+
+.img1{
+    width: 70%;
+    border-radius: 100px;
+    padding: 3px;
+    margin: 10px 20px 10px 20px;
+    border: solid 1.8px #FFFFFF;
+}
+.img2{
+    width: 80%;
+    border-radius: 100px;
+    padding: 3px;
+    margin: 10px 20px 10px 20px;
+    border: solid 1.8px #FFFFFF;
+    margin-left: 30px;
+}
+
+.player-name{
+    padding: 0 25%;
+    text-align: center;
+}
+
+/* Score-board */
+
+.sroreboard{
+    /* background: chocolate; */
+    font-size: 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%) ;
+    display: flex;
+    justify-content: center;
+}
+
+.score{
+    padding: 0 13px;
+    margin: 0;
+}
+
+.scoreboard1{
+    color: green;
+}
+
+.scoreboard2{
+    color: red;
+}
+
+.semicolom{
+    color: #C4C3C3;
+    font-size: 38px;
+}
+
+/* Dice-result */
+.dice-result{
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+#check1{
+  /* border: 1px solid black; */
+  border-radius: 1px;
+  width: 90px;
+  height: 90px;
+  margin: 50px;
+  margin-left: -60px;
+}
+
+/* Roll-button */
+button{
+    padding: 15px 35px;
+    background-color: #514DF7;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    position: absolute;
+    bottom: 18%;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    font-size: 12px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 3px 3px 3px rgb(125, 124, 124);
+    
+}
+
+/* Active-circle */
+.active1 {
+    border: solid 1.8px green;
+}
+
+.active2 {
+    border: solid 1.8px red;
+}
+
+/* Reset-btn */
+.dice-reset{
+    display: none;
+}
+
+/* Winner */
+.winner{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: -10%;
+    left: 30%;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Add styles for even smaller screens */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+}
